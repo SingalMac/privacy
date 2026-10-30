@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>마음한입 개인정보 처리방침</title>
+  <style>
+    :root { --brown:#49352b; --rust:#9c563e; --paper:#fbf8ef; --ink:#2f332f; --muted:#66706a; --line:#ded7c9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f4efe4; color:var(--ink); font:16px/1.75 system-ui,-apple-system,"Noto Sans KR",sans-serif; }
+    header { padding:30px 18px; background:var(--brown); color:#fffaf0; border-bottom:5px solid #cf9a64; }
+    header div,main,footer { width:min(780px,100%); margin:auto; }
+    .eyebrow { color:#e7c59f; font-size:12px; font-weight:800; letter-spacing:.12em; }
+    h1 { margin:8px 0 5px; font-size:clamp(24px,5vw,34px); line-height:1.3; }
+    header p { margin:0; color:#e7ddd1; font-size:14px; }
+    main { padding:22px 16px 42px; }
+    article { padding:24px clamp(18px,5vw,34px); border:1px solid var(--line); border-radius:18px 15px 20px 16px; background:var(--paper); box-shadow:0 8px 24px #35291b12; }
+    .meta { margin:0 0 20px; color:var(--muted); font-size:14px; }
+    h2 { margin:28px 0 8px; padding-bottom:7px; border-bottom:1px solid var(--line); color:var(--rust); font-size:19px; }
+    h2:first-of-type { margin-top:0; }
+    p { margin:8px 0 14px; }
+    a { color:#78432f; overflow-wrap:anywhere; }
+    ul { padding-left:22px; }
+    li { margin:8px 0; }
+    footer { padding:0 16px 28px; color:var(--muted); font-size:13px; }
+    @media(max-width:520px) { article { border-radius:12px; } }
+  </style>
+</head>
+<body>
+  <header><div>
+    <div class="eyebrow">MAEUMHANIP · PRIVACY</div>
+    <h1>마음한입 개인정보 처리방침</h1>
+    <p>시행일: 2026년 10월 30일</p>
+  </div></header>
+  <main><article>
+    <p class="meta">CowComUniverse(이하 운영자)는 마음한입 앱을 운영합니다. 개인정보 관련 문의와 열람·정정·삭제 요청은 <a href="mailto:cow_com_ai@protonmail.com">cow_com_ai@protonmail.com</a>으로 보내주세요.</p>
+
+    <h2>1. 처리하는 정보와 목적</h2>
+    <ul>
+      <li><strong>기기 내 기록:</strong> 사용자가 입력한 두 단어, 앱 설정, 생성된 이야기를 앱 기능 제공을 위해 이용자 기기에 저장합니다. 앱 데이터 삭제 또는 앱 제거 시 기기 기록이 삭제될 수 있습니다.</li>
+      <li><strong>이야기 생성:</strong> 요청한 주기의 단어와 생성 설정(언어, 분량·장르 등)을 Supabase Edge Function을 거쳐 OpenRouter 및 요청에 선택된 모델 제공자에게 보내 이야기를 생성합니다. 생성 Function은 입력이나 결과를 앱의 기록 데이터베이스에 저장하지 않고, 결과는 기기에 보관합니다. 각 제공자의 서비스 로그와 모델 처리·보유 조건은 해당 제공자 설정 및 정책을 따릅니다.</li>
+      <li><strong>익명 인증 및 요청 제한:</strong> 앱은 이메일·전화번호 없이 Supabase 익명 사용자를 생성합니다. 익명 사용자 ID, 시간 단위 요청 횟수와 시각을 이야기 요청 남용 및 생성 비용 제한에 이용합니다.</li>
+      <li><strong>이야기 신고:</strong> 신고 대상 이야기의 ID·제목·본문, 신고 사유와 익명 사용자 ID를 Supabase에 저장해 검토합니다. 신고는 사용자당 하루 최대 5건으로 제한합니다.</li>
+      <li><strong>광고:</strong> Google Mobile Ads SDK와 광고 파트너가 광고 제공, 성과 측정, 진단 및 부정 사용 방지를 위해 IP 주소, 광고 식별자, 기기 정보와 광고·앱 상호작용 정보를 처리할 수 있습니다. 처리 항목은 SDK 버전, 기기, 지역과 광고 설정에 따라 달라질 수 있습니다.</li>
+      <li><strong>식사 알림:</strong> 식사 알림은 기기에서 예약하는 로컬 알림입니다.</li>
+    </ul>
+
+    <h2>2. 제3자 서비스 및 국외 처리</h2>
+    <p>이야기 생성과 신고에는 Supabase, AI 글 생성에는 OpenRouter와 요청 시 선택된 모델 제공자, 광고에는 Google Mobile Ads 및 광고 파트너가 사용됩니다. 관련 정보는 대한민국 밖에서 전송·처리될 수 있습니다. Supabase 데이터베이스의 저장 리전은 FeedForStory 프로젝트 설정을 따르며, Edge Function과 모델 제공자의 처리 위치는 서비스 설정 및 요청 경로에 따라 달라질 수 있습니다.</p>
+    <ul>
+      <li><a href="https://supabase.com/privacy">Supabase 개인정보 처리방침</a></li>
+      <li><a href="https://openrouter.ai/privacy">OpenRouter 개인정보 처리방침</a></li>
+      <li><a href="https://policies.google.com/privacy">Google 개인정보 처리방침</a></li>
+    </ul>
+
+    <h2>3. 보유 기간과 파기</h2>
+    <ul>
+      <li><strong>기기 기록:</strong> 앱 데이터 또는 앱을 삭제하면 기기에서 삭제됩니다.</li>
+      <li><strong>이야기 생성 요청 제한 기록:</strong> 익명 사용자 ID와 시간 단위 요청 횟수·시각은 마지막 사용 시점부터 최대 약 72시간 보관한 뒤 자동 삭제합니다.</li>
+      <li><strong>신고 요청 제한 기록:</strong> 익명 사용자 ID와 날짜별 신고 횟수는 마지막 사용 시점부터 최대 약 72시간 보관한 뒤 자동 삭제합니다.</li>
+      <li><strong>신고 자료:</strong> 신고된 이야기와 사유, 신고자 ID는 검토를 위해 최대 89일 보관합니다. 일일 파기 작업에 따라 실제 삭제까지 최대 약 90일이 걸릴 수 있습니다.</li>
+      <li><strong>익명 인증 계정:</strong> 익명 Supabase 사용자 ID는 서버 요청 인증을 위해 보관됩니다. 앱 제거만으로 서버 계정이 자동 삭제되지는 않으며, 삭제 요청은 문의 이메일로 접수할 수 있습니다.</li>
+      <li><strong>제공자 운영 로그:</strong> Supabase, OpenRouter, 모델 제공자와 Google이 서비스 운영을 위해 처리하는 로그는 각 제공자의 보유·삭제 정책과 설정에 따릅니다.</li>
+    </ul>
+    <p>요청 제한 기록과 신고 자료의 자동 파기는 Supabase 운영 프로젝트에 보유 기간 설정을 적용한 뒤 작동합니다. 법령에 따른 보존 의무가 있는 경우에는 해당 정보를 별도 보관하고 의무 기간이 끝난 뒤 파기합니다.</p>
+
+    <h2>4. 이용자의 권리와 문의</h2>
+    <p>개인정보 열람·정정·삭제 요청은 <a href="mailto:cow_com_ai@protonmail.com">cow_com_ai@protonmail.com</a>으로 보내주세요. 기기 내 기록은 앱 데이터 삭제 또는 앱 제거로 직접 지울 수 있습니다.</p>
+
+    <h2>5. 아동 이용</h2>
+    <p>마음한입은 <strong>만 14세 미만 아동을 대상으로 하지 않습니다.</strong> 만 14세 미만 아동의 개인정보가 처리된 사실을 확인하면 운영자에게 알려주세요.</p>
+
+    <h2>6. 방침 변경</h2>
+    <p>개인정보 처리 방식이나 앱 기능이 변경되면 이 방침을 갱신하고 시행일을 함께 변경합니다. <a href="PRIVACY.md">문서 원본 보기</a></p>
+  </article></main>
+  <footer>마음한입 · 개인정보 처리 안내</footer>
+</body>
+</html>
