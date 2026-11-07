@@ -24,6 +24,8 @@ CowComUniverse(이하 운영자)는 단장의 계절 Android 앱을 운영합니
 
 이용자는 Android 또는 Google 계정의 광고 설정에서 광고 ID와 광고 개인 최적화 설정을 관리할 수 있습니다. 개인정보 관련 열람·정정·삭제 또는 문의는 **cow_com_ai@protonmail.com**으로 요청해 주세요.
 
+기기 기록과 Play Games 데이터의 삭제 방법은 [단장의 계절 데이터 삭제 안내](https://singalmac.github.io/privacy/danjang-season/delete-data/)에서 확인할 수 있습니다.
+
 ## 5. 아동의 개인정보
 
 앱은 생년월일을 직접 요구하지 않습니다. Play Games 순위는 Google 계정 및 Play Games 프로필을 이용하며 Google의 관련 정책이 적용됩니다. 아동의 개인정보 관련 문의는 운영자 이메일로 보내주세요.
